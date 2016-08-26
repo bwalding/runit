@@ -8,7 +8,7 @@
 
 - name: Ubuntu - start and enable runit service
   service:
-    name=runsvdir
+    name=runit
     enabled=yes
     state=started
   when: ansible_distribution|lower == "ubuntu"
